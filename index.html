@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Steps — Support</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 24px;
+            color: #1f2933;
+            background: #fafafa;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #0b0e12;
+                color: #e6edf3;
+            }
+
+            .contact {
+                background: rgba(148, 163, 184, 0.12);
+            }
+
+            details {
+                border-color: rgba(148, 163, 184, 0.35);
+            }
+
+            code {
+                background: rgba(148, 163, 184, 0.12);
+            }
+        }
+
+        h1 {
+            color: #1d3557;
+            border-bottom: 2px solid #457b9d;
+            padding-bottom: 12px;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            color: #1d3557;
+            margin-top: 40px;
+        }
+
+        h3 {
+            color: #22303c;
+            margin-top: 28px;
+        }
+
+        p {
+            margin: 12px 0;
+        }
+
+        a {
+            color: #1d6fd8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul,
+        ol {
+            padding-left: 22px;
+            margin: 12px 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            background: #f1f5f9;
+            padding: 18px;
+            border-radius: 10px;
+            margin: 24px 0;
+        }
+
+        code {
+            background: #e2e8f0;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        details {
+            margin: 16px 0;
+            border: 1px solid #d6dde6;
+            border-radius: 10px;
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.85);
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: 600;
+            user-select: none;
+            list-style: none;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::before {
+            content: "›";
+            display: inline-block;
+            margin-right: 8px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        details[open] summary::before {
+            transform: rotate(90deg);
+        }
+
+        .section-note {
+            font-size: 0.95rem;
+            color: #475569;
+        }
+
+        .section-note strong {
+            color: inherit;
+        }
+
+        blockquote {
+            border-left: 3px solid #94a3b8;
+            padding-left: 14px;
+            margin: 16px 0;
+            color: #475569;
+        }
+    </style>
+</head>
+<body>
+    <h1>Total Steps — Support</h1>
+    <p>Total Steps helps you keep a running tally of every step you have ever taken with your iPhone and Apple Watch. This page covers common questions, troubleshooting tips, and the privacy practices for the app.</p>
+
+    <div class="contact">
+        <strong>Contact:</strong> <a href="mailto:murashkin.alex@proton.me">murashkin.alex@proton.me</a><br>
+        <strong>Response time:</strong> usually within 48 hours.<br>
+        <strong>Best effort support:</strong> include your device model, iOS version, and a short description of what you were doing when the issue appeared.
+    </div>
+
+    <h2>Quick answers</h2>
+
+    <details open>
+        <summary>What can I do with Total Steps?</summary>
+        <div>
+            <ul>
+                <li>See <strong>today, month, year, and lifetime</strong> step totals in a single view—tap the headline number to switch modes.</li>
+                <li>Browse rich <strong>statistics</strong>: 10-week heatmap, streaks, personal records, milestones, goal tracking, and hourly activity charts.</li>
+                <li>Join the <strong>global leaderboard</strong> or compete in invite-only leagues that refresh continuously during the day.</li>
+                <li>Create, join, and manage <strong>private leagues</strong> with friends (limit varies based on in-app entitlements).</li>
+                <li>Share a <strong>poster</strong> of your total steps with the iOS share sheet—perfect for social updates.</li>
+                <li>Add <strong>lock screen and home screen widgets</strong> to glance at your lifetime total without opening the app.</li>
+                <li>Sign in with Apple to link multiple installs, purchase nickname tokens, tip the developer, and edit step goals directly on device.</li>
+            </ul>
+        </div>
+    </details>
+
+    <details>
+        <summary>How do I grant Health access?</summary>
+        <div>
+            <p>Total Steps is read-only and requires permission to read your step count from Apple Health:</p>
+            <ol>
+                <li>Open Total Steps and stay on the <strong>Steps</strong> tab.</li>
+                <li>If prompted, tap <strong>Allow in Health</strong>. If the prompt does not appear, open the <strong>Health</strong> app.</li>
+                <li>Go to <strong>Health &gt; Sharing &gt; Apps &gt; Total Steps</strong> (or the search field, then “Total Steps”).</li>
+                <li>Enable <strong>Steps</strong> under “Data from Apps”.</li>
+            </ol>
+            <p>Once enabled the app will refresh all totals automatically and keep the widget updated. HealthKit does not allow third-party apps to delete step data; Total Steps only reads it.</p>
+        </div>
+    </details>
+
+    <details>
+        <summary>What if the widget shows 0 steps?</summary>
+        <div>
+            <ul>
+                <li>Open the main app for a few seconds—widgets read the most recent cached value stored in the shared app group.</li>
+                <li>Confirm Health permissions are granted and that “Fitness Tracking” is enabled under <strong>Settings &gt; Privacy &amp; Security &gt; Motion &amp; Fitness</strong>.</li>
+                <li>Widget updates arrive at most every 30 minutes. The number turns zero if Health access is revoked or the app has not refreshed in the past day.</li>
+            </ul>
+        </div>
+    </details>
+
+    <details>
+        <summary>How does the leaderboard work?</summary>
+        <div>
+            <p>Total Steps uploads aggregated step totals (today, month, year, all-time) to the server whenever you pull to refresh or the app syncs in the background. These totals feed:</p>
+            <ul>
+                <li>A <strong>global leaderboard</strong> with daily, monthly, yearly, and lifetime boards.</li>
+                <li><strong>Personal leagues</strong> you create or join via invite code.</li>
+            </ul>
+            <p>Your display name appears on leaderboards. If you sign in with Apple, your installs stay linked so the same totals appear across devices.</p>
+        </div>
+    </details>
+
+    <details>
+        <summary>How do I create or join a league?</summary>
+        <div>
+            <ol>
+                <li>Open Total Steps and swipe to the <strong>Leagues</strong> tab.</li>
+                <li>Use the segmented control to switch between <strong>Global</strong> and <strong>My leagues</strong>.</li>
+                <li>Tap <strong>Create / Join</strong> to either start a league or enter an invite code.</li>
+                <li>League ownership and participation limits depend on in-app entitlements. Account deletion places leagues in read-only mode until the process completes.</li>
+            </ol>
+        </div>
+    </details>
+
+    <details>
+        <summary>How can I change my nickname?</summary>
+        <div>
+            <p>Nickname changes consume a <strong>Nickname Token</strong> ($1.00) to prevent spam on public leaderboards.</p>
+            <ol>
+                <li>Open the <strong>Me</strong> tab and choose <strong>Profile</strong>.</li>
+                <li>Tap your current display name, edit it, and choose <strong>Save</strong>.</li>
+                <li>If you do not have a token you can buy one from the same screen via the App Store tip jar flow.</li>
+            </ol>
+            <p>Nicknames are moderated. Offensive or impersonating names may be reset.</p>
+        </div>
+    </details>
+
+    <details>
+        <summary>How do I delete my account?</summary>
+        <div>
+            <ol>
+                <li>Open the <strong>Me</strong> tab &gt; <strong>Profile</strong>.</li>
+                <li>Scroll to <strong>Delete account &amp; data</strong> and follow the confirmation flow.</li>
+            </ol>
+            <p>This permanently removes your profile, leagues, leaderboard entries, and linked installs from the server. HealthKit data on your device stays intact (Apple does not allow third-party deletion). You can reinstall the app at any time to start fresh with a new install identifier.</p>
+        </div>
+    </details>
+
+    <h2>Troubleshooting</h2>
+    <ul>
+        <li><strong>Sync feels stale:</strong> pull to refresh on any tab or force-quit and reopen the app. Background refresh requires Low Power Mode to be off.</li>
+        <li><strong>Leaderboard empty:</strong> ensure you are signed in with Apple (optional but recommended) and have synced at least once today.</li>
+        <li><strong>Goals not saving:</strong> editing goals happens in the <strong>Statistics</strong> section of the Me tab. The values stay on-device; reinstalling the app resets them.</li>
+        <li><strong>Install linked to the wrong account:</strong> open <strong>Me &gt; Profile</strong>, sign out of Apple, then re-link using Sign in with Apple with the desired account.</li>
+        <li><strong>Challenge pass required:</strong> some leagues require an in-app entitlement. Verify the purchase under <strong>Settings &gt; Apple ID &gt; Subscriptions</strong> and re-run <strong>Restore Purchases</strong> from the tip jar card.</li>
+    </ul>
+
+    <h2>Known issues</h2>
+    <ul>
+        <li>Widgets update roughly every 30 minutes. iOS may delay updates overnight to conserve battery.</li>
+        <li>When Health permissions are revoked, the app enters read-only mode until access is restored.</li>
+        <li>Account deletion can take several minutes while all linked installs are removed. During this window leagues appear read-only.</li>
+        <li>If you reinstall, you will receive a new install ID and therefore a new leaderboard profile unless you sign back in with Apple to link it.</li>
+    </ul>
+
+    <h2>Changelog</h2>
+    <ul>
+        <li><strong>1.0</strong> — Initial App Store release with HealthKit sync, leaderboards, leagues, widgets, and statistics.</li>
+    </ul>
+
+    <h2>Privacy Policy</h2>
+    <p><strong>Effective:</strong> 12 Oct 2025</p>
+    <p>Total Steps balances insight with privacy. The app operates with a minimal data footprint and does not run advertising SDKs or third-party analytics.</p>
+
+    <h3>Health data</h3>
+    <ul>
+        <li>Total Steps <strong>only reads</strong> your step count from Apple Health. It does not write to or delete HealthKit records.</li>
+        <li>When you sync we send aggregated counts for today, this month, this year, and lifetime totals—never individual workouts or GPS traces.</li>
+        <li>HealthKit permissions can be revoked at any time from the Settings app. The app will continue to function in read-only mode without uploads.</li>
+    </ul>
+
+    <h3>Data we store on our servers</h3>
+    <ul>
+        <li>A randomly generated <strong>install ID</strong> that resets if you uninstall the app.</li>
+        <li>Your display nickname and optional Sign in with Apple subject (if you choose to link installs).</li>
+        <li>Aggregated step totals, sync timestamps, and your device timezone identifier—used for leaderboards and streak calculations.</li>
+        <li>League memberships, invite codes you create, and leaderboard positions.</li>
+        <li>Purchase receipts for nickname tokens or challenge passes (Apple sends anonymized transaction identifiers; we do not process payments ourselves).</li>
+    </ul>
+
+    <h3>Data kept on your device</h3>
+    <ul>
+        <li>Step history, streaks, and charts derived from HealthKit.</li>
+        <li>Display name cache, goal targets, and nickname token balance (encrypted by iOS in App Storage).</li>
+        <li>Widget state stored in the shared app group.</li>
+    </ul>
+
+    <h3>Third parties</h3>
+    <ul>
+        <li>Apple handles Sign in with Apple and all in-app purchases.</li>
+        <li>No advertising SDKs, tracking pixels, or social plugins are bundled with the app.</li>
+    </ul>
+
+    <h3>Retention & deletion</h3>
+    <ul>
+        <li>We retain leaderboard and league data while your account remains active. Requesting account deletion wipes it permanently.</li>
+        <li>Server backups are pruned regularly; once deletion completes your data disappears from active and backup storage within 30 days.</li>
+        <li>Support emails are kept only long enough to resolve the issue and can be purged on request.</li>
+    </ul>
+
+    <h3>Children’s privacy</h3>
+    <p>Total Steps is designed for a general audience and not marketed to children under 13. We do not knowingly collect personal data from children.</p>
+
+    <h3>Contact</h3>
+    <p>If you have privacy questions, email <a href="mailto:murashkin.alex@proton.me">murashkin.alex@proton.me</a>. We are happy to clarify how your data is handled.</p>
+</body>
+</html>
